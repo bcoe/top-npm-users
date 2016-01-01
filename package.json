@@ -1,0 +1,38 @@
+{
+  "name": "npm-user-download-counts",
+  "version": "1.0.0",
+  "description": "aggregate download counts for npm users.",
+  "main": "index.js",
+  "bin": "./bin/npm-user-download-counts.js",
+  "scripts": {
+    "pretest": "standard",
+    "test": "tap --coverage ./test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bcoe/npm-user-download-counts.git"
+  },
+  "keywords": [
+    "download",
+    "stats",
+    "counts"
+  ],
+  "author": "Ben Coe <ben@npmjs.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bcoe/npm-user-download-counts/issues"
+  },
+  "homepage": "https://github.com/bcoe/npm-user-download-counts#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "nock": "^3.6.0",
+    "standard": "^5.4.1",
+    "tap": "^4.0.0"
+  },
+  "dependencies": {
+    "async": "^1.5.0",
+    "changes-stream": "^1.1.0",
+    "request": "^2.67.0",
+    "yargs": "^3.31.0"
+  }
+}
