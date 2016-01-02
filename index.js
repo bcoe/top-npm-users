@@ -1,5 +1,4 @@
 var _ = require('lodash')
-var ChangesStream = require('changes-stream')
 var fs = require('fs')
 var handlebars = require('handlebars')
 var mkdirp = require('mkdirp')
@@ -7,18 +6,21 @@ var moment = require('moment')
 var queue = require('async').queue
 var request = require('request')
 
-function DownloadCounts (opts) {
+function TopUsers (opts) {
   _.extend(this, {
     saveInterval: 15000,
     dirty: false,
     countsUrl: 'https://api.npmjs.org/downloads/point/last-month/',
-    rawData: './output/maintainers.json',
+    outputDirectory: './output/',
+    jsonData: 'npm-top-users.json',
+    templateName: 'npm-top-users.md',
     registryDb: 'https://skimdb.npmjs.com/registry',
-    downloadCounts: {}
+    downloadCounts: {},
+    ChangesStream: require('changes-stream')
   }, opts)
 }
 
-DownloadCounts.prototype.updateCounts = function () {
+TopUsers.prototype.calculate = function () {
   var _this = this
 
   this._q = queue(function (task, callback) {
@@ -26,14 +28,7 @@ DownloadCounts.prototype.updateCounts = function () {
       json: true,
       url: _this.countsUrl + encodeURIComponent(task.name)
     }, function (err, res, obj) {
-      if (err) {
-        task.retries = task.retries || 0
-        if (task.retries < 3) {
-          task.retries++
-          _this._q.push(task)
-        }
-        return callback(err)
-      }
+      if (err) return callback(err)
       if (res.statusCode !== 200) return callback(Error('unexpected status = ' + res.statusCode))
       _this.dirty = true
       _this._updateUserCounts(task, obj.downloads)
@@ -41,9 +36,9 @@ DownloadCounts.prototype.updateCounts = function () {
     })
   }, 5)
 
-  var changes = new ChangesStream({
+  var changes = new this.ChangesStream({
     include_docs: true,
-    db: 'https://skimdb.npmjs.com/registry'
+    db: this.registryDb
   })
 
   changes.on('readable', function () {
@@ -61,16 +56,16 @@ DownloadCounts.prototype.updateCounts = function () {
     }
   })
 
-  setInterval(function () {
+  this._saveInterval = setInterval(function () {
     if (_this.dirty) {
       console.log('saving download counts (q = ' + _this._q.length() + ')')
-      mkdirp.sync('./output')
-      fs.writeFileSync('./output/maintainers.json', JSON.stringify(_this.downloadCounts, null, 2), 'utf-8')
+      mkdirp.sync(_this.outputDirectory)
+      fs.writeFileSync(_this.outputDirectory + _this.jsonData, JSON.stringify(_this.downloadCounts, null, 2), 'utf-8')
     }
   }, this.saveInterval)
 }
 
-DownloadCounts.prototype._updateUserCounts = function (task, downloads) {
+TopUsers.prototype._updateUserCounts = function (task, downloads) {
   var _this = this
   task.maintainers.forEach(function (maintainer) {
     if (!_this.downloadCounts[maintainer.name]) _this.downloadCounts[maintainer.name] = 0
@@ -78,8 +73,8 @@ DownloadCounts.prototype._updateUserCounts = function (task, downloads) {
   })
 }
 
-DownloadCounts.prototype.renderTopUsers = function () {
-  var template = handlebars.compile(fs.readFileSync('./npm-top-users.md.mustache', 'utf-8'))
+TopUsers.prototype.render = function () {
+  var template = handlebars.compile(fs.readFileSync(this.templateName + '.mustache', 'utf-8'))
 
   var result = template({
     end: moment().format('ll'),
@@ -93,12 +88,12 @@ DownloadCounts.prototype.renderTopUsers = function () {
     })
   })
 
-  mkdirp.sync('./output')
-  fs.writeFileSync('./output/npm-top-users.md', result, 'utf-8')
+  mkdirp.sync(this.outputDirectory)
+  fs.writeFileSync(this.outputDirectory + this.templateName, result, 'utf-8')
 }
 
-DownloadCounts.prototype._top100Users = function () {
-  var userMap = JSON.parse(fs.readFileSync(this.rawData, 'utf-8'))
+TopUsers.prototype._top100Users = function () {
+  var userMap = JSON.parse(fs.readFileSync(this.outputDirectory + this.jsonData, 'utf-8'))
   var users = []
 
   Object.keys(userMap).forEach(function (k) {
@@ -115,4 +110,8 @@ DownloadCounts.prototype._top100Users = function () {
   return users.slice(0, 100)
 }
 
-module.exports = DownloadCounts
+TopUsers.prototype.stop = function () {
+  if (this._saveInterval) clearInterval(this._saveInterval)
+}
+
+module.exports = TopUsers

@@ -1,0 +1,625 @@
+{
+  "seq": 79,
+  "id": "bejesus-cli",
+  "changes": [
+    {
+      "rev": "1-9a15e641582b4894794943f1575767e0"
+    }
+  ],
+  "doc": {
+    "_id": "bejesus-cli",
+    "_rev": "1-9a15e641582b4894794943f1575767e0",
+    "name": "bejesus-cli",
+    "description": "A CLI tool to allow interaction with the http://bejes.us/ platform.",
+    "dist-tags": {
+      "latest": "0.2.4"
+    },
+    "versions": {
+      "0.0.1": {
+        "name": "bejesus-cli",
+        "description": "A CLI tool to allow interaction with the http://bejes.us/ platform.",
+        "version": "0.0.1",
+        "homepage": "http://bejes.us/",
+        "repository": "git://github.com/DanBUK/bejesus-api.git",
+        "author": {
+          "name": "Daniel Bartlett",
+          "email": "dan@f-box.org",
+          "url": "http://danb-uk.net/"
+        },
+        "bin": {
+          "bejesus": "bin/bejesus.js"
+        },
+        "engines": {
+          "node": "*"
+        },
+        "dependencies": {
+          "bejesus-api": "0.0.1"
+        },
+        "_id": "bejesus-cli@0.0.1",
+        "_engineSupported": true,
+        "_npmVersion": "0.2.15",
+        "_nodeVersion": "v0.2.6",
+        "directories": {
+          "bin": "./bin"
+        },
+        "files": [
+          ""
+        ],
+        "_defaultsLoaded": true,
+        "dist": {
+          "shasum": "80193f6815adbe82122f53e479b5af9dfc900855",
+          "tarball": "http://registry.npmjs.org/bejesus-cli/-/bejesus-cli-0.0.1.tgz"
+        }
+      },
+      "0.0.2": {
+        "name": "bejesus-cli",
+        "description": "A CLI tool to allow interaction with the http://bejes.us/ platform.",
+        "version": "0.0.2",
+        "homepage": "http://bejes.us/",
+        "repository": "git://github.com/DanBUK/bejesus-api.git",
+        "author": {
+          "name": "Daniel Bartlett",
+          "email": "dan@f-box.org",
+          "url": "http://danb-uk.net/"
+        },
+        "bin": {
+          "bejesus": "bin/bejesus.js"
+        },
+        "engines": {
+          "node": "*"
+        },
+        "dependencies": {
+          "bejesus-api": "0.0.1"
+        },
+        "_id": "bejesus-cli@0.0.2",
+        "_engineSupported": true,
+        "_npmVersion": "0.2.15",
+        "_nodeVersion": "v0.2.6",
+        "directories": {
+          "bin": "./bin"
+        },
+        "files": [
+          ""
+        ],
+        "_defaultsLoaded": true,
+        "dist": {
+          "shasum": "de66a9a18342c05a438f499069a917c5b42d29cf",
+          "tarball": "http://registry.npmjs.org/bejesus-cli/-/bejesus-cli-0.0.2.tgz"
+        }
+      },
+      "0.0.3": {
+        "name": "bejesus-cli",
+        "description": "A CLI tool to allow interaction with the http://bejes.us/ platform.",
+        "version": "0.0.3",
+        "homepage": "http://bejes.us/",
+        "repository": "git://github.com/DanBUK/bejesus-api.git",
+        "author": {
+          "name": "Daniel Bartlett",
+          "email": "dan@f-box.org",
+          "url": "http://danb-uk.net/"
+        },
+        "bin": {
+          "bejesus": "bin/bejesus.js"
+        },
+        "engines": {
+          "node": "*"
+        },
+        "dependencies": {
+          "bejesus-api": "0.0.3"
+        },
+        "_id": "bejesus-cli@0.0.3",
+        "_engineSupported": true,
+        "_npmVersion": "0.2.15",
+        "_nodeVersion": "v0.2.6",
+        "directories": {
+          "bin": "./bin"
+        },
+        "files": [
+          ""
+        ],
+        "_defaultsLoaded": true,
+        "dist": {
+          "shasum": "594cc8f1b617d55a858af8de094ee8bb05de61d2",
+          "tarball": "http://registry.npmjs.org/bejesus-cli/-/bejesus-cli-0.0.3.tgz"
+        }
+      },
+      "0.1.0": {
+        "name": "bejesus-cli",
+        "description": "A CLI tool to allow interaction with the http://bejes.us/ platform.",
+        "version": "0.1.0",
+        "homepage": "http://bejes.us/",
+        "repository": "git://github.com/DanBUK/bejesus-api.git",
+        "author": {
+          "name": "Daniel Bartlett",
+          "email": "dan@f-box.org",
+          "url": "http://danb-uk.net/"
+        },
+        "bin": {
+          "bejesus": "bin/bejesus.js"
+        },
+        "engines": {
+          "node": "*"
+        },
+        "dependencies": {
+          "bejesus-api": "0.1.0"
+        },
+        "_id": "bejesus-cli@0.1.0",
+        "_engineSupported": true,
+        "_npmVersion": "0.2.15",
+        "_nodeVersion": "v0.2.5",
+        "directories": {
+          "bin": "./bin"
+        },
+        "files": [
+          ""
+        ],
+        "_defaultsLoaded": true,
+        "dist": {
+          "shasum": "34fb8c71ba088234e94df3479f79278c7caecdbe",
+          "tarball": "http://registry.npmjs.org/bejesus-cli/-/bejesus-cli-0.1.0.tgz"
+        }
+      },
+      "0.1.1": {
+        "name": "bejesus-cli",
+        "description": "A CLI tool to allow interaction with the http://bejes.us/ platform.",
+        "version": "0.1.1",
+        "homepage": "http://bejes.us/",
+        "repository": "git://github.com/DanBUK/bejesus-api.git",
+        "author": {
+          "name": "Daniel Bartlett",
+          "email": "dan@f-box.org",
+          "url": "http://danb-uk.net/"
+        },
+        "bin": {
+          "bejesus": "bin/bejesus.js"
+        },
+        "engines": {
+          "node": "*"
+        },
+        "dependencies": {
+          "bejesus-api": "0.1.1"
+        },
+        "_id": "bejesus-cli@0.1.1",
+        "_engineSupported": true,
+        "_npmVersion": "0.2.15",
+        "_nodeVersion": "v0.2.5",
+        "directories": {
+          "bin": "./bin"
+        },
+        "files": [
+          ""
+        ],
+        "_defaultsLoaded": true,
+        "dist": {
+          "shasum": "0b92065fab5dba4a40ea749d3a9c1d88469362bb",
+          "tarball": "http://registry.npmjs.org/bejesus-cli/-/bejesus-cli-0.1.1.tgz"
+        }
+      },
+      "0.1.2": {
+        "name": "bejesus-cli",
+        "description": "A CLI tool to allow interaction with the http://bejes.us/ platform.",
+        "version": "0.1.2",
+        "homepage": "http://bejes.us/",
+        "repository": "git://github.com/DanBUK/bejesus-api.git",
+        "author": {
+          "name": "Daniel Bartlett",
+          "email": "dan@f-box.org",
+          "url": "http://danb-uk.net/"
+        },
+        "bin": {
+          "bejesus": "bin/bejesus.js"
+        },
+        "engines": {
+          "node": "*"
+        },
+        "dependencies": {
+          "nodester-api": "0.1.0"
+        },
+        "_id": "bejesus-cli@0.1.2",
+        "_engineSupported": true,
+        "_npmVersion": "0.2.15",
+        "_nodeVersion": "v0.2.5",
+        "directories": {
+          "bin": "./bin"
+        },
+        "files": [
+          ""
+        ],
+        "_defaultsLoaded": true,
+        "dist": {
+          "shasum": "b63a533877ce935bd54b47b4e05133d0fa90e485",
+          "tarball": "http://registry.npmjs.org/bejesus-cli/-/bejesus-cli-0.1.2.tgz"
+        }
+      },
+      "0.1.3": {
+        "name": "bejesus-cli",
+        "description": "A CLI tool to allow interaction with the http://bejes.us/ platform.",
+        "version": "0.1.3",
+        "homepage": "http://bejes.us/",
+        "repository": "git://github.com/DanBUK/bejesus-api.git",
+        "author": {
+          "name": "Daniel Bartlett",
+          "email": "dan@f-box.org",
+          "url": "http://danb-uk.net/"
+        },
+        "bin": {
+          "bejesus": "bin/bejesus.js"
+        },
+        "engines": {
+          "node": "*"
+        },
+        "dependencies": {
+          "nodester-api": "0.1.1"
+        },
+        "_id": "bejesus-cli@0.1.3",
+        "_engineSupported": true,
+        "_npmVersion": "0.2.15",
+        "_nodeVersion": "v0.2.5",
+        "directories": {
+          "bin": "./bin"
+        },
+        "files": [
+          ""
+        ],
+        "_defaultsLoaded": true,
+        "dist": {
+          "shasum": "4e6e2f42722fd74e53e46e47db2d9ee57af3dfdf",
+          "tarball": "http://registry.npmjs.org/bejesus-cli/-/bejesus-cli-0.1.3.tgz"
+        }
+      },
+      "0.1.4": {
+        "name": "bejesus-cli",
+        "description": "A CLI tool to allow interaction with the http://bejes.us/ platform.",
+        "version": "0.1.4",
+        "homepage": "http://bejes.us/",
+        "repository": "git://github.com/DanBUK/bejesus-api.git",
+        "author": {
+          "name": "Daniel Bartlett",
+          "email": "dan@f-box.org",
+          "url": "http://danb-uk.net/"
+        },
+        "bin": {
+          "bejesus": "bin/bejesus.js"
+        },
+        "engines": {
+          "node": "*"
+        },
+        "dependencies": {
+          "nodester-api": "0.1.2"
+        },
+        "_id": "bejesus-cli@0.1.4",
+        "_engineSupported": true,
+        "_npmVersion": "0.2.15",
+        "_nodeVersion": "v0.2.5",
+        "directories": {
+          "bin": "./bin"
+        },
+        "files": [
+          ""
+        ],
+        "_defaultsLoaded": true,
+        "dist": {
+          "shasum": "2be53a1c1241e7a0c2f40272a6efa27df921a180",
+          "tarball": "http://registry.npmjs.org/bejesus-cli/-/bejesus-cli-0.1.4.tgz"
+        }
+      },
+      "0.1.5": {
+        "name": "bejesus-cli",
+        "description": "A CLI tool to allow interaction with the http://bejes.us/ platform.",
+        "version": "0.1.5",
+        "homepage": "http://bejes.us/",
+        "repository": "git://github.com/DanBUK/bejesus-api.git",
+        "author": {
+          "name": "Daniel Bartlett",
+          "email": "dan@f-box.org",
+          "url": "http://danb-uk.net/"
+        },
+        "bin": {
+          "bejesus": "bin/bejesus.js"
+        },
+        "engines": {
+          "node": "*"
+        },
+        "dependencies": {
+          "nodester-api": "0.1.3"
+        },
+        "_id": "bejesus-cli@0.1.5",
+        "_engineSupported": true,
+        "_npmVersion": "0.2.15",
+        "_nodeVersion": "v0.2.5",
+        "directories": {
+          "bin": "./bin"
+        },
+        "files": [
+          ""
+        ],
+        "_defaultsLoaded": true,
+        "dist": {
+          "shasum": "53c2190181a9e623a28df00354e6a953f958e6c0",
+          "tarball": "http://registry.npmjs.org/bejesus-cli/-/bejesus-cli-0.1.5.tgz"
+        }
+      },
+      "0.1.6": {
+        "name": "bejesus-cli",
+        "description": "A CLI tool to allow interaction with the http://bejes.us/ platform.",
+        "version": "0.1.6",
+        "homepage": "http://bejes.us/",
+        "repository": "git://github.com/DanBUK/bejesus-api.git",
+        "author": {
+          "name": "Daniel Bartlett",
+          "email": "dan@f-box.org",
+          "url": "http://danb-uk.net/"
+        },
+        "bin": {
+          "bejesus": "bin/bejesus.js"
+        },
+        "engines": {
+          "node": "*"
+        },
+        "dependencies": {
+          "nodester-api": "0.1.4"
+        },
+        "_id": "bejesus-cli@0.1.6",
+        "_engineSupported": true,
+        "_npmVersion": "0.2.15",
+        "_nodeVersion": "v0.2.5",
+        "directories": {
+          "bin": "./bin"
+        },
+        "files": [
+          ""
+        ],
+        "_defaultsLoaded": true,
+        "dist": {
+          "shasum": "140ea0e1dfb01683eefc5bd7f7364ef35a1fcf57",
+          "tarball": "http://registry.npmjs.org/bejesus-cli/-/bejesus-cli-0.1.6.tgz"
+        }
+      },
+      "0.1.7": {
+        "name": "bejesus-cli",
+        "description": "A CLI tool to allow interaction with the http://bejes.us/ platform.",
+        "version": "0.1.7",
+        "homepage": "http://bejes.us/",
+        "repository": "git://github.com/DanBUK/bejesus-api.git",
+        "author": {
+          "name": "Daniel Bartlett",
+          "email": "dan@f-box.org",
+          "url": "http://danb-uk.net/"
+        },
+        "bin": {
+          "bejesus": "bin/bejesus.js"
+        },
+        "engines": {
+          "node": "*"
+        },
+        "dependencies": {
+          "nodester-api": "0.1.4"
+        },
+        "_id": "bejesus-cli@0.1.7",
+        "_engineSupported": true,
+        "_npmVersion": "0.2.15",
+        "_nodeVersion": "v0.2.5",
+        "directories": {
+          "bin": "./bin"
+        },
+        "files": [
+          ""
+        ],
+        "_defaultsLoaded": true,
+        "dist": {
+          "shasum": "4e045a4f252c60dcb158e41ef5603ecfe9080199",
+          "tarball": "http://registry.npmjs.org/bejesus-cli/-/bejesus-cli-0.1.7.tgz"
+        }
+      },
+      "0.2.0": {
+        "name": "bejesus-cli",
+        "description": "A CLI tool to allow interaction with the http://bejes.us/ platform.",
+        "version": "0.2.0",
+        "homepage": "http://bejes.us/",
+        "repository": "git://github.com/nodester/nodester-cli.git",
+        "author": {
+          "name": "Daniel Bartlett",
+          "email": "dan@f-box.org",
+          "url": "http://danb-uk.net/"
+        },
+        "bin": {
+          "bejesus": "bin/nodester.js"
+        },
+        "engines": {
+          "node": "*"
+        },
+        "dependencies": {
+          "nodester-api": "0.1.4",
+          "colors": "0.3.0",
+          "iniparser": "1.0.1"
+        },
+        "_id": "bejesus-cli@0.2.0",
+        "_engineSupported": true,
+        "_npmVersion": "0.2.15",
+        "_nodeVersion": "v0.2.5",
+        "directories": {
+          "lib": "./lib",
+          "bin": "./bin"
+        },
+        "modules": {
+          "app.js": "lib/app.js",
+          "appdomain.js": "lib/appdomain.js",
+          "apps.js": "lib/apps.js",
+          "config.js": "lib/config.js",
+          "coupon.js": "lib/coupon.js",
+          "log.js": "lib/log.js",
+          "npm.js": "lib/npm.js",
+          "status.js": "lib/status.js",
+          "user.js": "lib/user.js"
+        },
+        "files": [
+          ""
+        ],
+        "_defaultsLoaded": true,
+        "dist": {
+          "shasum": "c03666518c4e01313d6368898936d7b2ea0e6568",
+          "tarball": "http://registry.npmjs.org/bejesus-cli/-/bejesus-cli-0.2.0.tgz"
+        }
+      },
+      "0.2.1": {
+        "name": "bejesus-cli",
+        "description": "A CLI tool to allow interaction with the http://bejes.us/ platform.",
+        "version": "0.2.1",
+        "homepage": "http://bejes.us/",
+        "repository": "git://github.com/nodester/nodester-cli.git",
+        "author": {
+          "name": "Daniel Bartlett",
+          "email": "dan@f-box.org",
+          "url": "http://danb-uk.net/"
+        },
+        "bin": {
+          "bejesus": "bin/nodester.js"
+        },
+        "engines": {
+          "node": "*"
+        },
+        "dependencies": {
+          "nodester-api": "0.1.5",
+          "colors": "0.3.0",
+          "iniparser": "1.0.1"
+        },
+        "_id": "bejesus-cli@0.2.1",
+        "_engineSupported": true,
+        "_npmVersion": "0.2.15",
+        "_nodeVersion": "v0.2.5",
+        "directories": {
+          "lib": "./lib",
+          "bin": "./bin"
+        },
+        "modules": {
+          "app.js": "lib/app.js",
+          "appdomain.js": "lib/appdomain.js",
+          "apps.js": "lib/apps.js",
+          "config.js": "lib/config.js",
+          "coupon.js": "lib/coupon.js",
+          "log.js": "lib/log.js",
+          "npm.js": "lib/npm.js",
+          "status.js": "lib/status.js",
+          "user.js": "lib/user.js"
+        },
+        "files": [
+          ""
+        ],
+        "_defaultsLoaded": true,
+        "dist": {
+          "shasum": "059a2a63354fa8c5e33c7be57d0861d5dc62ce3e",
+          "tarball": "http://registry.npmjs.org/bejesus-cli/-/bejesus-cli-0.2.1.tgz"
+        }
+      },
+      "0.2.3": {
+        "name": "bejesus-cli",
+        "description": "A CLI tool to allow interaction with the http://bejes.us/ platform.",
+        "version": "0.2.3",
+        "homepage": "http://bejes.us/",
+        "repository": "git://github.com/nodester/nodester-cli.git",
+        "author": {
+          "name": "Daniel Bartlett",
+          "email": "dan@f-box.org",
+          "url": "http://danb-uk.net/"
+        },
+        "bin": {
+          "bejesus": "bin/nodester.js"
+        },
+        "engines": {
+          "node": "*"
+        },
+        "dependencies": {
+          "nodester-api": "0.1.5",
+          "colors": "0.3.0",
+          "iniparser": "1.0.1"
+        },
+        "_id": "bejesus-cli@0.2.3",
+        "_engineSupported": true,
+        "_npmVersion": "0.2.18",
+        "_nodeVersion": "v0.4.0",
+        "directories": {
+          "lib": "./lib",
+          "bin": "./bin"
+        },
+        "files": [
+          ""
+        ],
+        "_defaultsLoaded": true,
+        "dist": {
+          "shasum": "72cc581dde6e996721c53300adc6680ee97acb84",
+          "tarball": "http://registry.npmjs.org/bejesus-cli/-/bejesus-cli-0.2.3.tgz"
+        }
+      },
+      "0.2.4": {
+        "name": "bejesus-cli",
+        "description": "A CLI tool to allow interaction with the http://bejes.us/ platform.",
+        "version": "0.2.4",
+        "homepage": "http://bejes.us/",
+        "repository": "git://github.com/nodester/nodester-cli.git",
+        "author": {
+          "name": "Daniel Bartlett",
+          "email": "dan@f-box.org",
+          "url": "http://danb-uk.net/"
+        },
+        "bin": {
+          "bejesus": "bin/nodester.js"
+        },
+        "engines": {
+          "node": "*"
+        },
+        "dependencies": {
+          "nodester-api": "0.1.5",
+          "colors": "0.3.0",
+          "iniparser": "1.0.1"
+        },
+        "_id": "bejesus-cli@0.2.4",
+        "_engineSupported": true,
+        "_npmVersion": "0.2.18",
+        "_nodeVersion": "v0.4.0",
+        "directories": {
+          "lib": "./lib",
+          "bin": "./bin"
+        },
+        "files": [
+          ""
+        ],
+        "_defaultsLoaded": true,
+        "dist": {
+          "shasum": "30d1a1f2aa60ada2cbeccd480e02837a19ef1a99",
+          "tarball": "http://registry.npmjs.org/bejesus-cli/-/bejesus-cli-0.2.4.tgz"
+        }
+      }
+    },
+    "maintainers": [
+      {
+        "name": "DanBUK",
+        "email": "dan@f-box.org"
+      }
+    ],
+    "time": {
+      "modified": "2011-02-14T15:56:41.561Z",
+      "created": "2011-01-29T20:16:37.127Z",
+      "0.0.1": "2011-01-29T20:16:37.764Z",
+      "0.0.2": "2011-01-29T21:55:25.491Z",
+      "0.0.3": "2011-01-30T12:21:27.990Z",
+      "0.1.0": "2011-01-31T07:57:29.930Z",
+      "0.1.1": "2011-01-31T11:38:26.970Z",
+      "0.1.2": "2011-02-01T13:31:08.382Z",
+      "0.1.3": "2011-02-01T13:49:05.032Z",
+      "0.1.4": "2011-02-03T15:41:23.687Z",
+      "0.1.5": "2011-02-05T20:51:11.686Z",
+      "0.1.6": "2011-02-06T20:41:21.536Z",
+      "0.1.7": "2011-02-08T13:07:13.471Z",
+      "0.2.0": "2011-02-12T17:52:35.225Z",
+      "0.2.1": "2011-02-13T11:59:04.405Z",
+      "0.2.3": "2011-02-14T11:41:31.104Z",
+      "0.2.4": "2011-02-14T15:56:41.561Z"
+    },
+    "author": {
+      "name": "Daniel Bartlett",
+      "email": "dan@f-box.org",
+      "url": "http://danb-uk.net/"
+    },
+    "repository": "git://github.com/nodester/nodester-cli.git"
+  }
+}
