@@ -13,8 +13,8 @@ function TopUsers (opts) {
     dirty: false,
     countsUrl: 'https://api.npmjs.org/downloads/point/last-month/',
     outputDirectory: './output/',
-    jsonData: 'npm-top-users.json',
-    templateName: 'npm-top-users.md',
+    jsonData: 'top-npm-users.json',
+    templateName: 'top-npm-users.md',
     registryDb: 'https://skimdb.npmjs.com/registry',
     downloadCounts: {},
     ChangesStream: require('changes-stream')

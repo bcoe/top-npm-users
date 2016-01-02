@@ -1,5 +1,5 @@
 {
-  "name": "npm-top-users",
+  "name": "top-npm-users",
   "version": "1.0.1",
   "description": "top npm users by download counts",
   "main": "index.js",

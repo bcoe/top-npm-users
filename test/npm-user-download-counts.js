@@ -8,12 +8,12 @@ var rimraf = require('rimraf')
 require('chai').should()
 require('tap').mochaGlobals()
 
-rimraf.sync('./output/npm-top-users.json')
-rimraf.sync('./output/npm-top-users.md')
+rimraf.sync('./output/top-npm-users.json')
+rimraf.sync('./output/top-npm-users.md')
 
 describe('DownloadCounts', function () {
   describe('calculate', function () {
-    it('outputs npm-top-users.json', function (done) {
+    it('outputs top-npm-users.json', function (done) {
       var downloads = nock('https://api.npmjs.org')
         .get('/downloads/point/last-month/bejesus-cli')
         .reply(200, {
@@ -33,7 +33,7 @@ describe('DownloadCounts', function () {
         downloads.done()
         dc.stop()
 
-        var topUsers = JSON.parse(fs.readFileSync('./output/npm-top-users.json'))
+        var topUsers = JSON.parse(fs.readFileSync('./output/top-npm-users.json'))
         topUsers.DanBUK.should.equal(200000)
 
         return done()
@@ -42,11 +42,11 @@ describe('DownloadCounts', function () {
   })
 
   describe('render', function () {
-    it('renders npm-top-users.md', function (done) {
+    it('renders top-npm-users.md', function (done) {
       var dc = new TopUsers()
       dc.render()
 
-      var content = fs.readFileSync('./output/npm-top-users.md', 'utf-8')
+      var content = fs.readFileSync('./output/top-npm-users.md', 'utf-8')
       content.should.match(/1.*DanBUK.*200,?000/)
 
       return done()

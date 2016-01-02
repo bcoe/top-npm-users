@@ -8,7 +8,7 @@ require('yargs')
     var dc = new TopUsers()
     dc.calculate()
   })
-  .command('render', 'read in npm-top-users.json and render the markdown report', function (yargs, argv) {
+  .command('render', 'read in top-npm-users.json and render the markdown report', function (yargs, argv) {
     var dc = new TopUsers()
     dc.render()
   })
