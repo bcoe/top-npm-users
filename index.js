@@ -3,6 +3,7 @@ var fs = require('fs')
 var handlebars = require('handlebars')
 var mkdirp = require('mkdirp')
 var moment = require('moment')
+var path = require('path')
 var queue = require('async').queue
 var request = require('request')
 
@@ -74,7 +75,9 @@ TopUsers.prototype._updateUserCounts = function (task, downloads) {
 }
 
 TopUsers.prototype.render = function () {
-  var template = handlebars.compile(fs.readFileSync(this.templateName + '.mustache', 'utf-8'))
+  var template = handlebars.compile(
+    fs.readFileSync(path.resolve(__dirname, this.templateName + '.mustache'), 'utf-8')
+  )
 
   var result = template({
     end: moment().format('ll'),
