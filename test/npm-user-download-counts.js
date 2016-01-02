@@ -47,7 +47,7 @@ describe('DownloadCounts', function () {
       dc.render()
 
       var content = fs.readFileSync('./output/npm-top-users.md', 'utf-8')
-      content.should.match(/1.*DanBUK.*200,000/)
+      content.should.match(/1.*DanBUK.*200,?000/)
 
       return done()
     })
