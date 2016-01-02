@@ -1,6 +1,6 @@
 {
   "name": "npm-top-users",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "top npm users by download counts",
   "main": "index.js",
   "bin": "./bin/top-npm-users.js",
