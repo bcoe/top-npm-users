@@ -1,6 +1,6 @@
 # top-npm-users ([git.io/npm-top](http://git.io/npm-top))
 
-[![Build Status](https://travis-ci.org/bcoe/top-npm-users.png)](https://travis-ci.org/bcoe/top-npm-users)
+[![Build Status](https://travis-ci.org/bcoe/top-npm-users.svg)](https://travis-ci.org/bcoe/top-npm-users)
 [![Coverage Status](https://coveralls.io/repos/bcoe/top-npm-users/badge.svg?branch=master)](https://coveralls.io/r/bcoe/top-npm-users?branch=master)
 [![NPM version](https://img.shields.io/npm/v/top-npm-users.svg)](https://www.npmjs.com/top-npm-users)
 
