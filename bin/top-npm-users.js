@@ -15,4 +15,4 @@ require('yargs')
   .help('h')
   .alias('h', 'help')
   .demand(1, 'a command must be provided')
-  .argv
+  .parse()

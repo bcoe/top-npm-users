@@ -24,20 +24,20 @@
   },
   "homepage": "https://github.com/bcoe/top-npm-users#readme",
   "devDependencies": {
-    "chai": "^3.4.1",
-    "nock": "^3.6.0",
-    "rimraf": "^2.5.0",
-    "standard": "^5.4.1",
-    "tap": "^4.0.0"
+    "chai": "^4.1.2",
+    "nock": "^9.2.5",
+    "rimraf": "^2.6.2",
+    "standard": "^11.0.1",
+    "tap": "^11.1.4"
   },
   "dependencies": {
-    "async": "^1.5.0",
-    "changes-stream": "^1.1.0",
-    "handlebars": "^4.0.5",
-    "lodash": "^3.10.1",
+    "async": "^2.6.0",
+    "changes-stream": "^2.2.0",
+    "handlebars": "^4.0.11",
+    "lodash": "^4.17.10",
     "mkdirp": "^0.5.1",
-    "moment": "^2.10.6",
-    "request": "^2.67.0",
-    "yargs": "^3.31.0"
+    "moment": "^2.22.1",
+    "request": "^2.85.0",
+    "yargs": "^11.0.0"
   }
 }
